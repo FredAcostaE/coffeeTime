@@ -42,7 +42,7 @@ p{
     justify-content: center;
     margin-top: 20px;
     border: 2px solid rgba(160, 156, 156, 0.435);
-    width: 30%;
+    width: auto;
     padding: 30px; 
     margin: 10px;
     
