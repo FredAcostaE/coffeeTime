@@ -1,0 +1,179 @@
+body{    
+    margin: 0px;
+    padding: 10px;
+}
+
+/*#seccion-principal{
+    background-image:url(imagenes/fondo-cafe.jpg);
+    background-repeat: no-repeat;
+}*/
+
+h1{
+    color: rgb(146, 60, 60);
+    font-size: 3em;
+}
+h2{
+    color: rgb(146, 60, 60);
+    font-size: 2em;
+    padding-left: 5px;
+}
+p{
+    text-align: justify;
+}
+
+.primera-parte{
+    border: 2px solid gray;
+    display: flex;
+    justify-self: center;
+    margin: 5px;
+    width: 50%;
+    padding: 3px;
+}
+.cafe{
+    margin: 2px;
+    padding-right: 2px;
+}
+.seccion-1{
+    display: flex;
+    justify-content: center;
+}
+.productos{
+    display: block;
+    justify-content: center;
+    margin-top: 20px;
+    border: 2px solid rgba(160, 156, 156, 0.435);
+    width: 30%;
+    padding: 30px; 
+    margin: 10px;
+    
+}
+#footer{
+    background-color: aquamarine;
+    margin: 5px;
+}
+#frase{
+    color: black;
+    font-style: italic;
+}
+#btn-generar{
+    background-color: rgb(61, 151, 199);
+    color: aliceblue;
+    margin: 4px;
+    border: 2px solid rgb(49, 43, 224);
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a{
+    color: rgb(70, 17, 17);
+    text-decoration: none;
+}
+ul{
+    text-decoration-style: none;
+}
+footer{
+    background-color: rgba(235, 235, 78, 0.838);;
+    display: flex;
+    justify-content: center;
+}
+ol, ul{
+    list-style: none;
+}
+#encabezado{
+    padding: 0.2em;
+    display: flex;
+    background-color: rgba(235, 235, 78, 0.838);
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    gap: 1em;
+    width: 80%;
+    align-items: center;
+}
+footer img{
+    width: auto;
+}
+#encabezado img{
+    width: auto;
+}
+
+
+#encabezado nav ul{
+    display: flex;
+    gap: 1em;
+    margin: 5px;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: rgb(123, 132, 122);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    #encabezado h1{
+        font-size: 30px;text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .seccion-1{
+        margin: 0 auto;
+        display: block;
+        justify-content: center;        
+    }
+    .productos{
+        display: block;
+        justify-items: auto;
+    }
+    .primera-parte{
+        display: block;
+        justify-items: auto;
+    } 
+    
+    .checkbtn{
+        display: block;
+    }
+
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(190, 190, 174, 0.838);
+        text-align: center;
+        color: rgb(154, 18, 18);
+        font-weight: bold;
+        top:80px;
+        left:100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;        
+    }
+    #encabezado nav ul li{
+        display: block;
+        justify-content: end;
+        margin: 50px;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a{
+        font-size: 40px; 
+    }  
+    #check:checked ~ .checkbtn {
+        color:brown;     
+    }
+  }
+  
